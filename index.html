@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
+    <link href="./CSS/estilo.css" rel="stylesheet">
+    <script src="./JS/md5.js"></script>
+    <script src="./JS/jquery.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/script.js"></script>
+    <title>Logueo</title>
+</head>
+<body>
+    <!--contenedor de bootstrap-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-4"></div>
+            <div class="col-xs-12 col-sm-8 col-md-4">
+                <!--formulario del login-->
+            <form method="POST" action="PHP/login.php">
+                <!--campo de email-->
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="email" class="form-control" id="email" required pattern="/^[_.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+.)+[a-zA-Z]{2,6}$/i"><br><br>
+                </div>
+                <!--campo de contraseña-->
+                <div class="form-group">
+                    <label>Contraseña:</label>
+                    <input type="password" class="form-control" id="pass" required minlength="4" maxlength="10"><br><br>
+                </div>
+                <!--campo del boton de iniciar sesion-->
+                <input type="button" class="btn btn-primary" id="btnSesion" value="Iniciar Sesion"><br><br>
+            </form>
+            <!--campo de las notificaciones-->
+            <div id="notificacion"></div>
+            </div>
+            <div class="col-sm-2 col-md-4"></div>
+        </div>
+    </div>
+</body>
+</html>

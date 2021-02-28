@@ -1,0 +1,1 @@
+debe montarse en un servidor apache ya que abrir directamente el html da error
